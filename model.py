@@ -92,6 +92,10 @@ def predict_labels(x, params):
     # TODO: return an array of {-1, +1} labels, one per row of x, using params['w'] and params['b'].
     return predict_from_scores(compute_scores(x, params))
 
-# Step 11 - accuracy_score (not yet solved)
-# TODO: implement
+# Step 11 - accuracy_score
+import numpy as np
+
+def accuracy_score(y_pred, y_true):
+    # TODO: return the fraction of positions where y_pred equals y_true.
+    return np.mean(y_pred == y_true)
 
